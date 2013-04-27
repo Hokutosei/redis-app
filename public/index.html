@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="lxJpNetworkingRedis">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/jp_styles.less" rel="stylesheet/less" type="text/css" media="screen">
+    <link href="bootstrap/css/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script src="bootstrap/js/less-1.3.3.min.js"></script>
+
+</head>
+<body ng-controller="AppCtrl">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">jeanepaul Network Monitor</a>
+            <h4 class="header_ping_counter"></h4><span>Server Started: {{serverStartTime}}</span>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span9 offset2">
+            <!-- Add your site or application content here -->
+
+            <input type="text" class="username" ng-model="username"> <input type="text" class="testField" style="margin-bottom: 0" ng-model="testData">
+            <button class="btn sendData" ng-click="sendData(testData)">send</button>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="socket.io/socket.io.js"></script>
+<script src="bootstrap/js/angular.min.js"></script>
+
+<script src="bootstrap/js/jp_scripts.js"></script>
+<script src="bootstrap/js/jp_angular.js"></script>
+<script src="bootstrap/js/jquery.easy-pie-chart.js"></script>
+<script>
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
